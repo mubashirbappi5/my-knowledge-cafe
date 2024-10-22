@@ -12,6 +12,6 @@ const Book = ({book}) => {
 };
 Book.propTypes = {
    
-    book:PropTypes.object.isRequired
+    book:PropTypes.object
   };
 export default Book;

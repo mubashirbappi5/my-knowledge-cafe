@@ -10,7 +10,7 @@ const Bookmarks = ({bookmark,readingtime}) => {
             </div>
             <h2 className='text-center font-bold'>Book Marks:{bookmark.length}</h2>
             {
-                bookmark.map(book =><Book key={book.id} 
+                bookmark.map((book,idx )=><Book key={idx} 
                     book={book}
                 ></Book>)
 
@@ -23,7 +23,7 @@ const Bookmarks = ({bookmark,readingtime}) => {
 };
 Bookmarks.propTypes = {
    
-    bookmark:PropTypes.object.isRequired,
+    bookmark:PropTypes.array,
     readingtime:PropTypes.number.isRequired
   };
 
