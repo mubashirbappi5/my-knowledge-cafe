@@ -1,6 +1,7 @@
 
 import './App.css'
 import Blogs from './component/blogs'
+import Bookmarks from './component/Bookmark/Bookmarks'
 import Headers from './component/Headers'
 
 function App() {
@@ -8,8 +9,10 @@ function App() {
   return (
     <>
     <Headers/>
-    <h3 className='text-2xl font-medium text-rose-600 text-center'>hi cheaking talwind</h3>
+    <main className="md:grid grid-cols-12 w-11/12 mx-auto">
      <Blogs/>
+     <Bookmarks/>
+     </main>
     </>
   )
 }
