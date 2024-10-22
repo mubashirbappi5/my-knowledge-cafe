@@ -1,7 +1,7 @@
 
 import { useState } from 'react'
 import './App.css'
-import Blogs from './component/blogs'
+import Blogs from './component/Blogs'
 import Bookmarks from './component/Bookmark/Bookmarks'
 import Headers from './component/Headers'
 
