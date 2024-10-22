@@ -41,10 +41,10 @@
     },
     {
       "id": 5,
-      "cover": "https://example.com/images/cover5.jpg",
+      "cover": "/src/assets/images/cover5.jpg",
       "title": "Optimizing Web Performance: Best Practices",
       "author": "Sarah Green",
-      "author_img": "https://example.com/images/sarahgreen.jpg",
+      "author_img": "/src/assets/images/profile.png",
       "posted_date": "2024-10-16",
       "hashtag": ["#WebPerformance", "#Optimization", "#Coding"],
       "reading_time": "10 min"
