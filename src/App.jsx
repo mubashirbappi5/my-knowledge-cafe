@@ -8,18 +8,31 @@ import Headers from './component/Headers'
 
 function App() {
   const [bookmark, setbookmark] = useState([])
+  const [readingtime, setreadingtime] =useState(0)
   const handleaddbookmark = (blog) =>{
     console.log(blog)
     const newbookmarks = [...bookmark,blog]
     setbookmark(newbookmarks)
+  }
+  const handlereadingtime = (time) =>{
+   const newreadingtime = readingtime +time
+   console.log(newreadingtime)
+   setreadingtime(newreadingtime)
   }
   
   return (
     <>
     <Headers/>
     <main className="md:grid grid-cols-12 w-11/12 mx-auto gap-5">
-     <Blogs handleaddbookmark={handleaddbookmark} />
-     <Bookmarks bookmark={bookmark} />
+     <Blogs
+      handleaddbookmark={handleaddbookmark}
+      handlereadingtime={handlereadingtime} 
+     
+     />
+     <Bookmarks 
+     bookmark={bookmark}
+     readingtime={readingtime}
+      />
      </main>
     </>
   )
